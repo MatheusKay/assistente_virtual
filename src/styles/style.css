@@ -1,0 +1,190 @@
+body {
+    background-color: #160F31;
+}
+
+.secao_da_ia {
+    height: 100vh;
+    width: 60vw;
+    padding: 32px;
+    margin: 2% auto;
+    border-radius: 50%;
+    background-color: #ccccccad;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Main CSS/ Css do formulario da IA*/
+
+.form_ia {
+    text-align: center;
+}
+
+.form_ia__input {
+    padding: 16px 24px;
+    font-size: 14px;
+    border: 1px solid black;
+}
+
+.form_ia__button {
+    padding: 6px 8px;
+    font-weight: bold;
+}
+
+.form_ia__resposta {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/*Main CSS/ Css Seleção de operadores*/
+
+.op_text__select {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.op_continers__buttons {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.op_continers__buttons__button,
+.form_calc__button {
+    padding: 16px 20px;
+    font-size: 20px;
+    background-color: rgb(88, 87, 87);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.op_continers__buttons__button:hover,
+.form_calc__button:hover {
+    background-color: #ccc;
+    transform: scale(1.2);
+}
+
+/*Main CSS/ Css formulario calculos*/
+
+.form_calc {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.form_calc__input {
+    width: 30%;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.form_calc__container__resposta {
+    width: 85%;
+    margin-top: 10%;
+}
+
+.form_calc_historico {
+    width: 50%;
+    font-size: 16px;
+}
+
+.form_calc__resultado {
+    margin: 0;
+}
+
+.form_calc__button {
+    margin-right: 8px;
+    margin-top: 4%;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/*Main CSS/ Css Status*/
+
+.sumir {
+    display: none;
+}
+
+.aparecer {
+    display: block;
+}
+
+input {
+    border: none;
+    border-radius: 12px;
+}
+
+p {
+    font-family: 'Quantico', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+}
+
+ul {
+    list-style: katakana;
+}
+
+/*Media CSS*/
+
+@media screen and (max-width: 767px) {
+    body {
+        background-size: contain;
+        background-color: #160F31;
+    }
+    
+    .secao_da_ia {
+        width: 80%;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0;
+    }
+
+    .form_calc {
+        display: block;
+    }
+
+    .op_continers__buttons,
+    .form_calc__container__resposta,
+    .form_calc_historico {
+        width: 100%;
+    }
+
+    .form_calc__input {
+        width: 85%;
+        margin-top: 2%;
+    }
+
+    .form_calc_historico {
+        margin-top: 10%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #160F31;
+    }
+
+    .secao_da_ia {
+        height: 60vh;
+    }
+}

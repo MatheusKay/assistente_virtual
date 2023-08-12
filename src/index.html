@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Ia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section class="secao_da_ia">
+        <div class="container">
+            <form id="form" class="form_ia">
+                <p>
+                    Dê as boas-vindas à sua parceira de cálculos! Como posso ajudar hoje? Informe-me seu nome para que possamos começar.
+                </p>
+                <input class="form_ia__input" type="text" id="nome" placeholder="Nome">
+                <button class="form_ia__button form_calc__button" type="submit">Entrar</button>
+                
+            </form>
+            <p class="form_ia__resposta" id="ia-resposta">
+        
+            </p>
+
+            <div id="secao_dos_calculos" class="sumir">
+                <div id="container_op">
+                    <p class="op_text__select" id="escolha_op">
+                        Por favor escolha um Operador.
+                    </p>
+                    
+                    <div class="op_continers__buttons">
+                        <button class="op_continers__buttons__button" id="op_soma" type="button"> + </button>
+                        <button class="op_continers__buttons__button" id="op_subtracao" type="button"> - </button>
+                        <button class="op_continers__buttons__button" id="op_multiplicacao" type="button"> x </button>
+                        <button class="op_continers__buttons__button" id="op_divisao" type="button"> ÷ </button>
+                    </div>
+                </div>
+                
+                <div class="form_calc">
+                    <form id="form-calc" class="sumir">
+                        <p class="form_calc__resposta__select" id="op_selecionado">
+                
+                        </p>
+            
+                        <label class="form_calc__label">Insira os valores aqui: </label>
+                        <input class="form_calc__input" type="number" id="valor-calculo" required>
+                        <div>
+                            <button class="form_calc__button" type="submit">Enviar</button>
+                            <button class="form_calc__button" onclick="apagaConta()" type="reset">Limpar</button>
+                        </div>
+
+                        <div class="form_calc__container__resposta">
+                            <p class="form_calc__resultado" id="resultado">
+        
+                            </p>
+                    
+                            <div id="container_buttons" class="sumir">
+                                <button class="form_calc__button form_calc__button__contZer" id="res-continuar" type="button">Continuar</button>
+                                <button class="form_calc__button form_calc__button__contZer" id="res-zerar" type="button">Voltar</button>
+                            </div>
+                        </div>
+                    </form>
+            
+                    <div class="sumir form_calc_historico" id="container_historico">
+                        <p>
+                            Aqui ficara os valores computados para o calculo, caso queira zerar esses valore por gentileza aperte em Limpar ou Volte para a seleção de Operadores.
+                        </p>
+                        <ul id="historico_de_calculos">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section >
+        <div class="container">
+            
+        </div>
+    </section> -->
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
